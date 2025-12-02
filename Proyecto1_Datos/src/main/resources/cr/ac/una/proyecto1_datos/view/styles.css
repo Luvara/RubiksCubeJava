@@ -1,0 +1,218 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+@font-face {
+    font-family: "OCR A Extended"; /* Nombre de la fuente que deseas utilizar */
+    src: url("../resources/fonts/OCRAEXT.TTF"); /* Ruta de la fuente descargada */
+}
+
+.mainFxmlClass {
+
+}
+
+.mfx-ripple-generator{
+    -mfx-animation-speed: 0;
+    -mfx-background-opacity: 0;
+    -mfx-ripple-radius: 0;
+    -mfx-paused: true;
+}
+/*------------------------------------------------------------------------------*/
+.mfx-button-inicio{
+    -fx-cursor: hand;
+    -fx-background-color: transparent; /* Establece el fondo del botón como transparente */
+    -fx-font: 40px "OCR A Extended";
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-size: contain; /* Ajusta el tamaño de la imagen al botón */
+    -fx-background-position: center; /* Centra la imagen en el botón */
+    -fx-padding: 0;  /*Elimina el relleno del botón */
+}
+.mfx-button-inicio:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-inicio:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 200, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.mfx-button-menuPrincipal, .mfx-button-menuSalir{
+    -fx-cursor: hand;
+    -fx-pref-width: 300px;   /* Ancho mínimo */
+    -fx-pref-height: 50px;   /* Alto mínimo */
+    -fx-background-color: #333333; /* Establece el fondo del botón como transparente */
+    -fx-font: 20px "OCR A Extended"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #FFFFFF; /* Color del texto */
+    -fx-background-radius: 0px;
+    -fx-padding: 0;  /*Elimina el relleno del botón */
+    -fx-transition: background-color 1s, -fx-scale-x 1; /* Transiciones de 0.3 segundos */
+}
+.mfx-button-menuPrincipal:hover{
+    -fx-background-color: #FFFFFF; /* Establece el fondo del botón como transparente */
+    -fx-text-fill: #000000;
+    /*-fx-scale-x: 1.2; /* Escala horizontalmente el botón a 120% en hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-menuPrincipal:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+
+.mfx-button-menuSalir:hover{
+    -fx-background-color: #cc0000; /* Establece el fondo del botón como transparente */
+    -fx-text-fill: #000000;
+    /*-fx-scale-x: 1.2; /* Escala horizontalmente el botón a 120% en hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-menuSalir:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.mfx-button-play{
+    -fx-cursor: hand;
+    -fx-background-color: transparent; /* Establece la fuente y el tamano */
+    -fx-content-display: graphic-only;
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-size: contain; /* Ajusta el tamaño de la imagen al botón */
+    -fx-background-position: center; /* Centra la imagen en el botón */
+    -fx-padding: 0;  /*Elimina el relleno del botón */
+}
+.mfx-button-play:hover{
+    -fx-background-color: #FFFFFF; /* Establece el fondo del botón como transparente */
+    -fx-text-fill: #000000;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-play:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.mfx-button-Image, .mfx-button-Image-variable{
+    -fx-cursor: hand;
+    -fx-background-color: transparent; /* Establece el fondo del botón como transparente */
+    -fx-content-display: graphic-only;
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-size: contain; /* Ajusta el tamaño de la imagen al botón */
+    -fx-background-position: center; /* Centra la imagen en el botón */
+    -fx-padding: 0;  /*Elimina el relleno del botón */
+}
+
+.mfx-button-Image:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-Image-variable:hover{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 204, 1), 10, 0.5, 0.0, 0.0);
+}
+.mfx-button-Image:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 255), 10, 0.5, 0.0, 0.0);
+}
+
+.mfx-button-Image:disabled{
+    -fx-opacity: 0.4;
+}
+/*------------------------------------------------------------------------------*/
+.imvFondoPantallaJuego{
+    -fx-background-image: url("../resources/media/fondo.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+/*------------------------------------------------------------------------------*/
+.mfx-radio-button{
+    -fx-font: 20px "OCR A Extended";
+    -fx-text-fill: #000000;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+    -mfx-main: #000000;
+    -mfx-secondary: #424242;
+}
+
+.mfx-radio-button-image{
+    -fx-font: 20px "OCR A Extended"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-background-color: transparent; /* Establece el fondo del botón como transparente */
+    -fx-content-display: graphic-only;
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-size: contain; /* Ajusta el tamaño de la imagen al botón */
+    -fx-background-position: center; /* Centra la imagen en el botón */
+    -fx-padding: 0;  /*Elimina el relleno del botón */
+    -mfx-main: #000000;
+    -mfx-secondary: #424242;
+}
+.mfx-radio-button-image:selected{
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 204, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.mfx-text-field-edit {
+    -mfx-main: #000000;
+    -fx-background-color: #999999;
+    -fx-background-radius: 5;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-font: 20px "OCR A Extended";
+}
+
+.mfx-text-field-edit .floating-text {
+    -fx-font: 20px "OCR A Extended";
+    -fx-text-fill: -mfx-text-he;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+
+.mfx-text-field-edit:floating .floating-text {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.panel-transparencia{
+    -fx-background-color: rgba(0, 0, 0, 0.35);
+    -fx-background-repeat: no-repeat; /* Evita que la imagen se repita */
+    -fx-background-size: contain; /* Ajusta el tamaño de la imagen al botón */
+    -fx-background-position: center; /* Centra la imagen en el botón */
+    -fx-background-radius: 10px;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.label{
+
+    -fx-font: 15px "Arial Rounded MT Bold"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+.label-18{
+
+    -fx-font: 18px "OCR A Extended"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+.label-other{
+
+    -fx-font: 20px "OCR A Extended"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.tooltip {
+    -fx-font: 20px "OCR A Extended"; /* Establece la fuente y el tamano */
+    -fx-text-fill: #000000; /* Color del texto */
+    -fx-background-color: rgba(204, 204, 204, 0.50); /* Cambia el color de fondo */
+    -fx-background-radius: 10px;
+    -fx-border-color: #000000; /* Cambia el color del borde */
+    -fx-border-width: 2px; /* Cambia el ancho del borde */
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.images-effect {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 204, 1), 10, 0.5, 0.0, 0.0);
+}
+/*------------------------------------------------------------------------------*/
+.table-view{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-font: 15px "Arial Rounded MT Bold";
+}
+
+.table-column {
+    -fx-background-color: rgba(0, 0, 0, 0.35);/* Cambiar a tu color deseado */
+    -fx-background-radius: 10px;
+    -fx-alignment: CENTER;
+}
